@@ -1,0 +1,165 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap");
+
+*{
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    background-image: url(../public/1.jpg);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    color: aliceblue;
+    text-align: center;
+}
+
+div h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+div button{
+    border: none;
+    background-color: teal;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+b{
+    color:#fff;
+    background-color: teal;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+*/
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../public/2.png'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #fff;
+}
+
+/* Header Styling */
+.header {
+    width: 100%;
+    background-color: rgba(0, 128, 128, 0.9); /* Teal background with slight transparency */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Main Content Styling (Advice Card) */
+.advice-app {
+    max-width: 500px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency for the advice card */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    color: #333;
+    margin-top: 120px; /* Adds space below the fixed header */
+    position: relative;
+}
+
+.advice-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Button Styling */
+.advice-button {
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.advice-button:hover {
+    background-color: #218838;
+}
+
+/* Advice Counter */
+.advice-counter {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .advice-app {
+        max-width: 400px;
+    }
+
+    .advice-button {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+
+    .advice-text {
+        font-size: 1.1rem;
+    }
+}
